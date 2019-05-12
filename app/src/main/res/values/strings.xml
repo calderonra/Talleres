@@ -6,4 +6,10 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <string name="notApply">N/A</string>
+    =======
+    <string name="appbar_scrolling_view_behavior">Text</string>
+    >>>>>>> 1503ce22d1eb5d9d1baf6559926b7bb6514f02c3
+
 </resources>
