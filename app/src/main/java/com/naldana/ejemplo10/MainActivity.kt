@@ -18,7 +18,12 @@ import com.naldana.ejemplo10.utilities.NetworkUtils
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
-
+/*
+import kotlinx.android.synthetic.main.grid_coins_layout.view.*
+import retrofit2.Retrofit
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
+import retrofit2.converter.gson.GsonConverterFactory
+*/
 import java.io.IOException
 import java.net.URL
 
@@ -74,6 +79,59 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             this.twoPane =  true
             println("Le diste vuelta a la pantalla xd")
         }
+
+        /*
+        fun readCoins():List<Coin>{
+            val db = dbHelper.readableDatabase
+
+            val projection = arrayOf(
+                BaseColumns._ID,
+                DatabaseContract.Monedas.COLUMN_NAME,
+                DatabaseContract.Monedas.COLUMN_COUNTRY,
+                DatabaseContract.Monedas.COLUMN_ISAVALIABLE,
+                DatabaseContract.Monedas.COLUMN_VALUE,
+                DatabaseContract.Monedas.COLUMN_YEAR,
+                DatabaseContract.Monedas.COLUMN_VALUE_US,
+                DatabaseContract.Monedas.COLUMN_IMGBANDERAPAIS,
+                DatabaseContract.Monedas.COLUMN_IMG
+
+            )
+
+            val sortOrder = "${DatabaseContract.Monedas.COLUMN_NAME} DESC"
+
+            val cursor = db.query(
+                DatabaseContract.Monedas.TABLE_NAME, // nombre de la tabla
+                projection, // columnas que se devolverán
+                null, // Columns where clausule
+                null, // values Where clausule
+                null, // Do not group rows
+                null, // do not filter by row
+                sortOrder // sort order
+            )
+
+            var lista = mutableListOf<Coin>()
+
+            with(cursor) {
+                while (moveToNext()) {
+                    var moneditas = Coin(
+                        getInt(getColumnIndexOrThrow(BaseColumns._ID)),
+                        getString(getColumnIndexOrThrow(DatabaseContract.Monedas.COLUMN_NAME)),
+                        getString(getColumnIndexOrThrow(DatabaseContract.Monedas.COLUMN_COUNTRY)),
+                        getString(getColumnIndexOrThrow(DatabaseContract.Monedas.COLUMN_IMG)),
+                        getString(getColumnIndexOrThrow(DatabaseContract.Monedas.COLUMN_ISAVALIABLE)),
+                        getString(getColumnIndexOrThrow(DatabaseContract.Monedas.COLUMN_REVIEW)),
+                        getString(getColumnIndexOrThrow(DatabaseContract.Monedas.COLUMN_YEAR))
+
+                    )
+
+                    lista.add(moneditas)
+                }
+            }
+
+            return lista
+
+        }
+         */
     }
 
 
