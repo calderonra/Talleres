@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:orientation="vertical"
+              android:gravity="center">
+    <TextView
+            android:id="@+id/tv_nombreMoneda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notApply"
+            android:textStyle="bold"
+        android:textSize="30dp"/>
+    <TextView
+            android:id="@+id/tv_nombrePais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notApply"
+            android:textStyle="italic"
+            android:layout_marginBottom="@dimen/design_fab_elevation"/>
+    <TextView
+            android:id="@+id/tv_valorMonetario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notApply"
+            />
+
+</LinearLayout>
