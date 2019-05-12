@@ -18,12 +18,7 @@ import com.naldana.ejemplo10.utilities.NetworkUtils
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
-/*
-import kotlinx.android.synthetic.main.grid_coins_layout.view.*
-import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
-import retrofit2.converter.gson.GsonConverterFactory
-*/
+
 import java.io.IOException
 import java.net.URL
 
